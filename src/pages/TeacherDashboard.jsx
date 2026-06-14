@@ -37,21 +37,21 @@ export default function TeacherDashboard() {
         <section className="mb-12">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="text-xl font-bold text-slate-900">Continue Teaching</h2>
-            <Link to="/curriculum/y3/y3-l3" className="text-sm font-semibold text-ca-blue hover:underline">
-              Resume Year 3, Lesson 3 →
+            <Link to="/curriculum/y3/y3-l1" className="text-sm font-semibold text-ca-blue hover:underline">
+              Start Year 3, Lesson 1 →
             </Link>
           </div>
           <Link
-            to="/curriculum/y3/y3-l3"
+            to="/curriculum/y3/y3-l1"
             className="group relative block overflow-hidden rounded-2xl bg-gradient-to-br from-ca-blue to-ca-blue-dark p-8 text-white shadow-card md:p-10"
           >
             <div className="relative z-10 max-w-lg">
               <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-bold">
-                Year 3 · Lesson 3
+                Year 3 · Unit 1 · Lesson 1
               </span>
-              <h3 className="mt-4 text-2xl font-black md:text-3xl">Saving for Something Special</h3>
+              <h3 className="mt-4 text-2xl font-black md:text-3xl">What is Money?</h3>
               <p className="mt-2 text-white/80">
-                Children set savings goals and learn why people save money.
+                Job Centre role play — children explore how people earn money through work.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 rounded-full bg-ca-yellow px-5 py-2.5 text-sm font-bold text-slate-900">
                 Open Lesson <ArrowRight className="h-4 w-4" />

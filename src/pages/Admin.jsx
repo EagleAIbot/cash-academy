@@ -58,7 +58,7 @@ export default function Admin() {
                 { label: "Active Schools", value: "4", icon: Building2 },
                 { label: "Total Pupils", value: "1,555", icon: Users },
                 { label: "Monthly Revenue", value: "£396", icon: CreditCard },
-                { label: "Lessons Published", value: "3", icon: FileUp },
+                { label: "Lessons Published", value: "7", icon: FileUp },
               ].map((stat) => (
                 <div key={stat.label} className="card">
                   <stat.icon className="mb-3 h-6 w-6 text-ca-blue" />
@@ -182,9 +182,11 @@ export default function Admin() {
               <h3 className="mb-4 font-bold text-slate-900">Published Content</h3>
               <div className="space-y-3">
                 {[
-                  "Year 3 — Lesson 1: What is Money?",
-                  "Year 3 — Lesson 2: Needs vs Wants",
-                  "Year 3 — Lesson 3: Saving for Something Special",
+                  "Year 3 — Unit 1 L1: What is Money?",
+                  "Year 5 — Unit 1 L1: From Job to Wage",
+                  "Year 5 — Unit 1 L2: Understanding a Payslip",
+                  "Year 5 — Unit 1 L3: Why Tax Exists",
+                  "Year 5 — Unit 2 L1: Needs, Wants and Adult Choices",
                 ].map((item) => (
                   <div
                     key={item}
