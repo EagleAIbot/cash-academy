@@ -41,11 +41,11 @@ export default function Landing() {
               experiences and curriculum resources.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link to="/curriculum" className="btn-primary">
-                Explore Curriculum <ArrowRight className="h-4 w-4" />
+              <Link to="/schools" className="btn-primary">
+                Subscribe Your School <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link to="/money-town" className="btn-secondary">
-                Book Money Town™
+              <Link to="/curriculum" className="btn-secondary">
+                Explore Curriculum
               </Link>
             </div>
           </div>
@@ -142,12 +142,13 @@ export default function Landing() {
           <h2 className="mb-8 text-3xl font-black text-slate-900">
             Explore the platform
           </h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {[
+              { to: "/schools", title: "For Schools", desc: "Subscribe via Stripe" },
               { to: "/dashboard", title: "Teacher Dashboard", desc: "Netflix meets Notion" },
               { to: "/curriculum/y3", title: "Curriculum", desc: "Year 3–6 lessons" },
               { to: "/money-town", title: "Money Town™", desc: "Workshop booking" },
-              { to: "/admin", title: "Admin Panel", desc: "Run it yourself" },
+              { to: "/admin", title: "Admin Panel", desc: "763 schools" },
             ].map((item) => (
               <Link key={item.to} to={item.to} className="card group hover:border-ca-yellow">
                 <h3 className="font-bold text-slate-900 group-hover:text-ca-blue">{item.title}</h3>
@@ -198,8 +199,8 @@ export default function Landing() {
               <p className="text-2xl font-black text-slate-900">£99/month</p>
             </div>
           </div>
-          <Link to="/stages/1" className="btn-primary mt-8 inline-flex">
-            View Full Roadmap <ArrowRight className="h-4 w-4" />
+          <Link to="/schools" className="btn-primary mt-8 inline-flex">
+            Subscribe Your School <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>

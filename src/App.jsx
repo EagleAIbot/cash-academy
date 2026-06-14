@@ -6,11 +6,17 @@ import LessonPage from "./pages/Lesson";
 import MoneyTown from "./pages/MoneyTown";
 import Admin from "./pages/Admin";
 import StagePage from "./pages/Stage";
+import SchoolsSales from "./pages/SchoolsSales";
+import Checkout from "./pages/Checkout";
+import CheckoutSuccess from "./pages/CheckoutSuccess";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
+      <Route path="/schools" element={<SchoolsSales />} />
+      <Route path="/checkout" element={<Checkout />} />
+      <Route path="/checkout/success" element={<CheckoutSuccess />} />
       <Route path="/dashboard" element={<TeacherDashboard />} />
       <Route path="/curriculum" element={<Navigate to="/curriculum/y3" replace />} />
       <Route path="/curriculum/:yearId" element={<CurriculumPage />} />

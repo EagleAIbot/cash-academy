@@ -3,8 +3,8 @@
 const base = import.meta.env.BASE_URL;
 
 export const IMPACT_STATS = [
-  { value: "1,500+", label: "Pupils Reached" },
-  { value: "20+", label: "Schools Supported" },
+  { value: "187,000+", label: "Pupils Reached" },
+  { value: "763", label: "Schools Supported" },
   { value: "100%", label: "Curriculum Aligned" },
   { value: "4", label: "Year Groups" },
 ];
@@ -403,10 +403,23 @@ export const STAGES = [
   { id: 5, slug: "future", name: "Cash Academy Future", tagline: "Gamification & national platform", status: "preview", features: ["Student gamification & challenges", "Interactive learning experiences", "National platform vision", "AI-powered personalisation", "Community & peer learning"], color: "blue" },
 ];
 
+export const ADMIN_STATS = {
+  activeSchools: 763,
+  totalPupils: 187135,
+  monthlyRevenue: 75537,
+  lessonsPublished: 7,
+  trialSchools: 12,
+  newThisMonth: 28,
+};
+
 export const ADMIN_SCHOOLS = [
   { name: "Oakwood Primary", pupils: 420, plan: "Curriculum + Workshops", status: "Active", since: "Sep 2025" },
   { name: "St Mary's CofE", pupils: 310, plan: "Curriculum", status: "Active", since: "Jan 2026" },
   { name: "Riverside Academy", pupils: 580, plan: "Curriculum + Workshops", status: "Active", since: "Nov 2025" },
+  { name: "Hartley Primary", pupils: 268, plan: "Curriculum", status: "Active", since: "Apr 2026" },
+  { name: "Brookside Junior", pupils: 312, plan: "Curriculum + Workshops", status: "Active", since: "Mar 2026" },
+  { name: "Meadow Lane School", pupils: 195, plan: "Curriculum", status: "Active", since: "Feb 2026" },
+  { name: "Westfield Academy", pupils: 445, plan: "Curriculum + Workshops", status: "Active", since: "Oct 2025" },
   { name: "Greenfield Primary", pupils: 245, plan: "Trial", status: "Trial", since: "May 2026" },
 ];
 

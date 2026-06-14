@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Logo } from "./Logo";
 
 const NAV = [
+  { to: "/schools", label: "For Schools" },
   { to: "/dashboard", label: "Teacher Dashboard" },
   { to: "/curriculum", label: "Curriculum" },
   { to: "/money-town", label: "Money Town™" },
