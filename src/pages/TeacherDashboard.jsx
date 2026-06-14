@@ -127,7 +127,7 @@ export default function TeacherDashboard() {
           {[
             { icon: Download, label: "Download Resources", to: "/curriculum/y3" },
             { icon: Star, label: "Money Town™", to: "/money-town" },
-            { icon: Sparkles, label: "Future Features", to: "/stages/2" },
+            { icon: Sparkles, label: "Future Features", to: "/roadmap" },
           ].map((action) => (
             <Link
               key={action.label}
@@ -147,7 +147,7 @@ export default function TeacherDashboard() {
             {FUTURE_FEATURES.slice(0, 3).map((f) => (
               <Link
                 key={f.id}
-                to={`/stages/${f.stage}`}
+                to={`/roadmap#stage-${f.stage}`}
                 className="rounded-xl border border-dashed border-ca-blue/40 bg-ca-blue-light/50 p-5 transition hover:bg-ca-blue-light"
               >
                 <span className="text-xs font-bold text-ca-blue">Stage {f.stage}</span>

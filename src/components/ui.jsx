@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 export function FutureCard({ feature }) {
   return (
     <Link
-      to={`/stages/${feature.stage}`}
+      to={`/roadmap#stage-${feature.stage}`}
       className="group card flex flex-col gap-3 hover:border-ca-blue/30"
     >
       <span className="inline-flex w-fit self-start rounded-full bg-ca-yellow/30 px-3 py-1 text-xs font-bold text-slate-800">

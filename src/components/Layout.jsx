@@ -9,7 +9,7 @@ const NAV = [
   { to: "/curriculum", label: "Curriculum" },
   { to: "/money-town", label: "Money Town™" },
   { to: "/admin", label: "Admin" },
-  { to: "/stages/1", label: "Roadmap" },
+  { to: "/roadmap", label: "Roadmap" },
 ];
 
 export function DemoBanner() {
