@@ -196,6 +196,14 @@ export default function Roadmap() {
           <Link to="/schools" className="btn-primary mt-8 inline-flex">
             Start with Stage 1 — Subscribe a School <ArrowRight className="h-4 w-4" />
           </Link>
+          <a
+            href={`${import.meta.env.BASE_URL}collateral/Cash-Academy-Roadmap.html`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 block text-sm font-semibold text-ca-blue hover:underline"
+          >
+            Download roadmap sheet for email (Print → Save as PDF)
+          </a>
         </div>
       </section>
     </Layout>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Cash Academy — Growth Roadmap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --blue: #90B1DC;
+    --blue-dark: #7A9BC8;
+    --blue-light: #E8F0FA;
+    --yellow: #FAD60E;
+    --ink: #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: A4; margin: 12mm; }
+  body {
+    font-family: Inter, system-ui, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 277mm;
+    padding: 0 0 8mm;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+  header {
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: #fff;
+    padding: 14mm 14mm 12mm;
+    margin: -12mm -12mm 10mm;
+  }
+  .logo-row { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 18px; font-weight: 800; letter-spacing: -0.02em; }
+  .tagline { font-size: 10px; font-weight: 600; opacity: 0.85; margin-top: 2px; }
+  .eyebrow {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.2);
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+  h1 { font-size: 26px; font-weight: 800; line-height: 1.1; margin-top: 8px; }
+  .intro { font-size: 11px; line-height: 1.55; margin-top: 8px; max-width: 95%; opacity: 0.92; }
+  .content { padding: 0 2mm; }
+  .stage {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    page-break-inside: avoid;
+  }
+  .stage.live { border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue); }
+  .stage-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 10px;
+    background: var(--blue-light);
+  }
+  .stage.live .stage-head { background: var(--blue); color: #fff; }
+  .stage-num { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.7; }
+  .stage-name { font-size: 13px; font-weight: 800; margin-top: 2px; }
+  .badge {
+    font-size: 7px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 3px 8px;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  .stage.live .badge { background: var(--yellow); color: var(--ink); }
+  .stage:not(.live) .badge { background: #e2e8f0; color: var(--muted); }
+  .stage-body { padding: 8px 10px 10px; font-size: 9px; line-height: 1.45; }
+  .label {
+    font-size: 7.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue-dark);
+    margin: 6px 0 3px;
+  }
+  .outcome { font-weight: 600; color: var(--ink); font-size: 9.5px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
+  .metric {
+    background: #f8fafc;
+    border-radius: 6px;
+    padding: 6px 8px;
+  }
+  .metric strong { display: block; font-size: 11px; font-weight: 800; }
+  .metric span { font-size: 7.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  ul { padding-left: 14px; margin-top: 3px; }
+  li { margin-bottom: 1px; color: var(--muted); }
+  .closing {
+    background: var(--blue-light);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 10px;
+    line-height: 1.55;
+    font-weight: 500;
+    color: var(--ink);
+    page-break-inside: avoid;
+  }
+  .footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 8px;
+    color: var(--muted);
+  }
+  .footer strong { color: var(--blue-dark); }
+  @media screen {
+    body { background: #f1f5f9; padding: 20px; }
+    .page { background: #fff; margin: 0 auto 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 12mm; }
+    header { margin: -12mm -12mm 10mm; }
+    .print-hint {
+      max-width: 210mm;
+      margin: 0 auto 16px;
+      padding: 12px 16px;
+      background: #fff;
+      border-radius: 8px;
+      font-size: 13px;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+  }
+  @media print { .print-hint { display: none; } }
+</style>
+</head>
+<body>
+<p class="print-hint">Open in Chrome → <strong>File → Print → Save as PDF</strong> to attach to your email.</p>
+
+<div class="page">
+  <header>
+    <div class="logo-row">
+      <div>
+        <div class="logo">Cash Academy</div>
+        <div class="tagline">SMART MONEY. START YOUNG.</div>
+      </div>
+      <div style="text-align:right;font-size:9px;opacity:0.85">Prepared by SCALR</div>
+    </div>
+    <span class="eyebrow">Product Roadmap</span>
+    <h1>Growth Roadmap</h1>
+    <p class="intro">A strategic path from launch to national scale. Each stage unlocks the next — funded by the success of the one before it. We recommend launching Stage 1 first, proving schools will subscribe, then progressing when revenue milestones are hit.</p>
+  </header>
+
+  <div class="content">
+    <div class="stage live">
+      <div class="stage-head">
+        <div><div class="stage-num">Stage 1 · Live Demo</div><div class="stage-name">Cash Academy Digital</div></div>
+        <span class="badge">Recommended Next Step</span>
+      </div>
+      <div class="stage-body">
+        <div class="label">Outcome</div>
+        <p class="outcome">Launch Cash Academy online and begin selling curriculum subscriptions to schools.</p>
+        <div class="label">Includes</div>
+        <ul>
+          <li>Teacher Dashboard · Curriculum Library · Year 3–6 Structure</li>
+          <li>Lesson & Resource Downloads · Money Town™ Workshop Booking</li>
+          <li>School Subscription Management · Admin Portal · Curriculum Upload</li>
+          <li>Basic Email Automations (enquiry, welcome, access, renewal, curriculum, password reset)</li>
+        </ul>
+        <p style="margin-top:5px;font-size:8px;color:var(--muted)">No CRM. No marketing automation. Customer lifecycle automation only.</p>
+        <div class="grid2">
+          <div class="metric"><span>Investment</span><strong>£1,999</strong></div>
+          <div class="metric"><span>Monthly Support</span><strong>£99/month</strong></div>
+          <div class="metric"><span>Success Milestone</span><strong>10 paying schools</strong></div>
+          <div class="metric"><span>Annual Revenue Goal</span><strong>£3,000 – £10,000</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <div><div class="stage-num">Stage 2 · Future Release</div><div class="stage-name">Cash Academy Connect</div></div>
+        <span class="badge">Future Release</span>
+      </div>
+      <div class="stage-body">
+        <div class="label">Outcome</div>
+        <p class="outcome">Create a predictable system for engaging schools and growing awareness.</p>
+        <p style="font-size:8.5px;color:var(--muted);margin-top:3px"><strong>Purpose:</strong> Move beyond workshop referrals and founder-led growth.</p>
+        <div class="label">Includes</div>
+        <ul>
+          <li>School CRM · Lead Tracking · Sample Lesson Downloads · Lead Capture Forms</li>
+          <li>Teacher Interest Database · Automated Follow-Up · Engagement & Dashboard Reporting</li>
+        </ul>
+        <div class="grid2">
+          <div class="metric"><span>Investment</span><strong>£3,500</strong></div>
+          <div class="metric"><span>Monthly Support</span><strong>£199/month</strong></div>
+          <div class="metric"><span>Implement After</span><strong>25+ schools or £15k+ revenue</strong></div>
+          <div class="metric"><span>Revenue Target</span><strong>£15k – £50k/year</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <div><div class="stage-num">Stage 3 · Future Release</div><div class="stage-name">Cash Academy Complete</div></div>
+        <span class="badge">Future Release</span>
+      </div>
+      <div class="stage-body">
+        <div class="label">Outcome</div>
+        <p class="outcome">Become a complete curriculum platform rather than a resource library.</p>
+        <p style="font-size:8.5px;color:var(--muted);margin-top:3px"><strong>Purpose:</strong> Increase retention and create greater value for schools.</p>
+        <div class="label">Includes</div>
+        <ul>
+          <li>Assessment Resources · Curriculum Mapping · Progress Tracking · School Reporting</li>
+          <li>Ofsted Evidence Support · Multi Teacher Access · MAT & Trust Level Reporting</li>
+        </ul>
+        <div class="grid2">
+          <div class="metric"><span>Investment</span><strong>£7,500</strong></div>
+          <div class="metric"><span>Monthly Support</span><strong>£299/month</strong></div>
+          <div class="metric"><span>Implement After</span><strong>75+ schools or £50k+ revenue</strong></div>
+          <div class="metric"><span>Revenue Target</span><strong>£50k – £150k/year</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <header style="padding:10mm 14mm 8mm">
+    <div class="logo">Cash Academy Roadmap</div>
+    <p class="intro" style="margin-top:6px;font-size:10px">Stages 4 & 5 · Long-term vision</p>
+  </header>
+
+  <div class="content">
+    <div class="stage">
+      <div class="stage-head">
+        <div><div class="stage-num">Stage 4 · Future Release</div><div class="stage-name">Cash Academy Home</div></div>
+        <span class="badge">Future Release</span>
+      </div>
+      <div class="stage-body">
+        <div class="label">Outcome</div>
+        <p class="outcome">Extend financial literacy beyond the classroom.</p>
+        <p style="font-size:8.5px;color:var(--muted);margin-top:3px"><strong>Purpose:</strong> Create engagement with parents and children outside school.</p>
+        <div class="label">Includes</div>
+        <ul>
+          <li>Parent Portal · Homework Activities · Home Learning Tasks · Family Resources</li>
+          <li>Parent Engagement Dashboard · Student Challenges · Financial Literacy Activities</li>
+        </ul>
+        <div class="grid2">
+          <div class="metric"><span>Investment</span><strong>£9,500</strong></div>
+          <div class="metric"><span>Monthly Support</span><strong>£399/month</strong></div>
+          <div class="metric"><span>Implement After</span><strong>150+ schools or £150k+ revenue</strong></div>
+          <div class="metric"><span>Revenue Target</span><strong>£150k – £300k+/year</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head">
+        <div><div class="stage-num">Stage 5 · Future Release</div><div class="stage-name">Cash Academy Future</div></div>
+        <span class="badge">Future Release</span>
+      </div>
+      <div class="stage-body">
+        <div class="label">Outcome</div>
+        <p class="outcome">National financial literacy platform.</p>
+        <p style="font-size:8.5px;color:var(--muted);margin-top:3px"><strong>Purpose:</strong> Create a market-leading educational ecosystem.</p>
+        <div class="label">Includes</div>
+        <ul>
+          <li>Student Accounts · Interactive Learning · Gamification · Financial Literacy Journey</li>
+          <li>Achievement Tracking · National School Platform · Sponsorship · Partnership Integrations</li>
+        </ul>
+        <div class="grid2">
+          <div class="metric"><span>Investment</span><strong>Custom Scope</strong></div>
+          <div class="metric"><span>Monthly Support</span><strong>Custom Scope</strong></div>
+          <div class="metric"><span>Implement After</span><strong>300+ schools or £300k+ revenue</strong></div>
+          <div class="metric"><span>Revenue Target</span><strong>National Scale</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="closing" style="margin-top:12px">
+      <strong>Our recommendation:</strong> We do not recommend building everything today. The smartest route is to launch Cash Academy Digital, prove schools will subscribe, and allow each stage to be funded by the success of the previous stage. Every stage is designed to unlock the next level of growth.
+    </div>
+
+    <div class="footer">
+      <strong>SMART MONEY. START YOUNG.</strong><br />
+      Cash Academy · Financial literacy for primary schools · Demo platform by SCALR<br />
+      Live demo: eagleaibot.github.io/cash-academy
+    </div>
+  </div>
+</div>
+</body>
+</html>
